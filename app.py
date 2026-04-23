@@ -9,7 +9,7 @@ iris = load_iris()
 X = iris.data
 y = iris.target
 
-model = DecisionTreeClassifier()
+model = DecisionTreeClassifier(random_state=42)
 model.fit(X, y)
 
 # Class names
